@@ -8,12 +8,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
     <style>
-        body{
+        body {
             background-image: url("https://res.cloudinary.com/dpcbzfiye/image/upload/w_1080,c_fill,dpr_auto,f_auto,q_auto,fl_progressive/v1611254753/xour9upedhfhd6hldufy.jpg");
             background-size: cover;
             background-repeat: no-repeat;
         }
-        .row{
+        
+        .row {
             padding: 20px;
             background-color: black;
             opacity: 85%;
@@ -21,21 +22,24 @@
             color: white;
             border-radius: 20px;
         }
-        .form-control{
+        
+        .form-control {
             width: 20em;
         }
-        .column-1{
-          padding: 100px;  
+        
+        .column-1 {
+            padding: 100px;
         }
-        ::placeholder{
+        
+         ::placeholder {
             color: black;
         }
     </style>
 </head>
 
 <body>
-    <div class="row" width= 75%>
-        <div class="col-md-6 column-1" >
+    <div class="row" width=7 5%>
+        <div class="col-md-6 column-1">
             <h1>Please <br> wear mask <br>and<br> Social Distance</h1>
         </div>
         <div class="col-md-6">
@@ -43,14 +47,15 @@
 
                 <h3>Personal Details</h3>
                 <br>
-                <div class="form-group" align=center>
+                <div class="form-group" align=center method="post" action="/notifier_filled/">
+                    {% csrf_token %}
                     <!-- <label for="name">Name:</label> -->
                     <input class="form-control" type="text" name="name" id="name" placeholder="Name">
                 </div>
                 <br>
                 <div class="form-group" align=center>
                     <!-- <label for="email">E-mail id:</label> -->
-                    <input  class="form-control" type="text" name="name" id="email" placeholder="Email">
+                    <input class="form-control" type="text" name="email" id="email" placeholder="Email">
                 </div>
                 <br>
                 <div class="form-group" align=center>
@@ -59,36 +64,37 @@
                     <input   type="radio" name="radiogroup1" value="radio" id="radiogroup2"> Female -->
 
                     <select class="form-control" name="Gender">
-                        <option>Gender</option>
+                        <optgroup label="Gender">
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
+                        </optgroup>
                     </select>
                 </div>
 
                 <br>
                 <div class="form-group" align=center>
                     <!-- <label for="mobile">Contact Number:</label> -->
-                    <input  class="form-control" type="text" name="mobile" id="mobile" placeholder="Mobile Number"> 
+                    <input class="form-control" type="text" name="mobile" id="mobile" placeholder="Mobile Number">
                 </div>
                 <br>
                 <div class="form-group" align=center>
                     <!-- <label for ="state">State:</label> -->
-                    <input  class="form-control" type="text" name="name" id="state" placeholder="State">
+                    <input class="form-control" type="text" name="state" id="state" placeholder="State">
                 </div>
                 <br>
                 <div class="form-group" align=center>
                     <!-- <label for ="district">District:</label> -->
-                    <input  class="form-control" type="text" name="name" id="district" placeholder="District">
+                    <input class="form-control" type="text" name="district" id="district" placeholder="District">
                 </div>
                 <br>
                 <div class="form-group" align=center>
                     <!-- <label for="pincode">Pincode:</label> -->
-                    <input  class="form-control" type="text" name="name" id="pincode" placeholder="Pin-Code">
+                    <input class="form-control" type="text" name="pin" id="pincode" placeholder="Pin-Code">
                 </div>
                 <br>
-                <button class= "btn btn-outline-light"> Submit </button>
-        
-            </form>        
+                <button class="btn btn-outline-light"> Submit </button>
+
+            </form>
         </div>
     </div>
 </body>
