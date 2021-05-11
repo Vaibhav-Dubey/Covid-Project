@@ -6,3 +6,5 @@ from django.http import HttpResponse
 def Notifier(request):
     return render(request,'Notifier.html')
 
+def index(request):
+    return render(request, "test.html")
