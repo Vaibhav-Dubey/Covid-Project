@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Get Notified</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+    <!-- javascript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Google Font-->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/penna" type="text/css"/>
+
+    <style>
+                
+        .navbar{
+            /* background-color:white; */
+            opacity: 75%;
+            padding: 0px 50px;
+            text-align: center;
+        }
+
+        .navbar-brand{
+            color: black;
+            font-size: 3em;
+            font-weight: bold;
+            font-family:'PennaRegular';
+        }
+        .nav-link{
+            color: black;
+            margin: 0 20px;
+            /* font-size: 1.7em; */
+        }
+
+        .dropdown-item{
+            /* font-size: 1.7em;   */
+            color: black;
+        }
+
+        body{
+            background-image: url("https://res.cloudinary.com/dpcbzfiye/image/upload/w_1080,c_fill,dpr_auto,f_auto,q_auto,fl_progressive/v1611254753/xour9upedhfhd6hldufy.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .row{
+            
+            padding: 20px;
+            background-color: #807ca7;
+            opacity: 85%;
+            margin: 5em 10em;
+            margin-top: 8em;
+            color: white;
+            border-radius: 20px;
+        }
+        h1{
+            font-size: 4rem;
+        }
+
+        span{
+            font-size: 6rem;
+            font-weight: bold;
+        }
+        .form-control{
+            width: 20em;
+        }
+        .column-1{
+          padding: 100px;  
+          font-family: 'PennaRegular';
+          padding-right: 10px;
+        }
+
+        h3{
+            font-family: 'PennaRegular';
+            font-size: 3rem;
+        }
+
+        @media screen and (max-width: 600px){
+            .row{
+                margin:4em 2em;
+            }
+            .column-1{
+                padding: 20px;
+                text-align: center;
+            }
+
+            .form-control{
+                width: 13em;
+            }
+
+            .form-group{
+                margin-bottom: 2px !important; 
+            }
+            h3{
+                padding-top: 10px;
+                border-top-style: solid;
+                border-top-width: 1px ;
+                font-size: 2em;
+
+            }
+            h1{
+                font-size: 2rem;
+            }
+            span{
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <a href="#" class="navbar-brand">Resources</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                  Resources
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Plasma</a>
+                  <a class="dropdown-item" href="#">Remdesivir</a>
+                  <a class="dropdown-item" href="#">Beds</a>
+                  <a class="dropdown-item" href="#">Ventilator</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Slot Notification</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+    </nav>
+    <div class="row" width= 100%>
+        <div class="col-md-6 column-1" >
+            <h1>Please <br><span class="heading"> wear mask</span> <br>and<br> <span class="heading">Social Distance!</span></h1>
+        </div>
+        <div class="col-md-6">
+            <form align="center">
+
+                <h3>Personal Details</h3>
+                <br>
+                <div class="form-group" align=center>
+                    <!-- <label for="name">Name:</label> -->
+                    <input class="form-control" type="text" name="name" id="name" placeholder="Name">
+                </div>
+                <br>
+                <div class="form-group" align=center>
+                    <!-- <label for="email">E-mail id:</label> -->
+                    <input  class="form-control" type="text" name="name" id="email" placeholder="Email">
+                </div>
+                <br>
+                <div class="form-group" align=center>
+                    <!-- <label for ="gender">Gender:</label> -->
+                    <!-- <input  type="radio" name="radiogroup1" value="radio" id="radiogroup1"> Male
+                    <input   type="radio" name="radiogroup1" value="radio" id="radiogroup2"> Female -->
+
+                    <select class="form-control" name="Gender">
+                        <option>Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+
+                <br>
+                <div class="form-group" align=center>
+                    <!-- <label for="mobile">Contact Number:</label> -->
+                    <input  class="form-control" type="text" name="mobile" id="mobile" placeholder="Mobile Number"> 
+                </div>
+                <br>
+                <div class="form-group" align=center>
+                    <!-- <label for ="state">State:</label> -->
+                    <input  class="form-control" type="text" name="name" id="state" placeholder="State">
+                </div>
+                <br>
+                <div class="form-group" align=center>
+                    <!-- <label for ="district">District:</label> -->
+                    <input  class="form-control" type="text" name="name" id="district" placeholder="District">
+                </div>
+                <br>
+                <div class="form-group" align=center>
+                    <!-- <label for="pincode">Pincode:</label> -->
+                    <input  class="form-control" type="text" name="name" id="pincode" placeholder="Pin-Code">
+                </div>
+                <br>
+                <button class= "btn btn-outline-light"> Notify Me! </button>
+        
+            </form>        
+        </div>
+    </div>
+</body>
+
+</html>
